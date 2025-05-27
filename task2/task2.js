@@ -1,12 +1,15 @@
 // Form validation
 document.getElementById("contactForm").addEventListener("submit", function (e) {
-  const email = document.getElementById("email").value;
-  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value.trim();
+  const name = document.getElementById("name").value.trim();
+
+  // Email format regex (basic but effective)
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
   if (!email || !name) {
     alert("Please fill all fields.");
     e.preventDefault();
-  } else if (!email.includes("@")) {
+  } else if (!emailPattern.test(email)) {
     alert("Please enter a valid email address.");
     e.preventDefault();
   }
