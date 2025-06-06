@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Interactive Quiz & Joke App</title>
+  <link rel="stylesheet" href="task3.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🌟 Quiz Time + Joke Break</h1>
+
+    <div id="quiz-section">
+      <h2 id="question">Loading question...</h2>
+      <div id="options"></div>
+      <p id="quiz-result"></p>
+      <button onclick="nextQuestion()" id="next-btn" style="display: none;">Next Question</button>
+      <p id="final-score"></p>
+    </div>
+
+    <hr>
+
+    <div class="joke-section">
+      <h2>😂 Need a Laugh?</h2>
+      <button onclick="getJoke()">Get a Random Joke</button>
+      <p id="joke-text">Your joke will appear here...</p>
+    </div>
+  </div>
+
+  <script src="task3.js"></script>
+</body>
+</html>
