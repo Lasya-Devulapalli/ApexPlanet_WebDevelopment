@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrendyShop - E-commerce</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="light">
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">TrendyShop</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html?category=Electronics">Electronics</a></li>
+            <li><a href="products.html?category=Clothing">Clothing</a></li>
+            <li><a href="products.html?category=Footwear">Footwear</a></li>
+            <li><a href="products.html?category=Appliances">Appliances</a></li>
+            <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+        </ul>
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Search products...">
+        </div>
+        <button id="mode-toggle">Toggle Dark Mode</button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Welcome to TrendyShop</h1>
+        <p>Discover vibrant products with unbeatable deals!</p>
+        <a href="products.html" class="btn">Shop Now</a>
+    </section>
+
+    <!-- Featured Categories -->
+    <section class="categories">
+        <h2>Shop by Category</h2>
+        <div class="category-grid">
+            <div class="category-card">
+                <img src="https://leelinesourcing.com/wp-content/uploads/2022/11/original_200219061202_5e4cd1b2c5eb3-1024x682.jpg" alt="Electronics">
+                <h3>Electronics</h3>
+                <a href="products.html?category=Electronics" class="btn">Explore</a>
+            </div>
+            <div class="category-card">
+                <img src="https://c1.peakpx.com/wallpaper/573/909/315/store-clothes-clothing-line-fashion-wallpaper.jpg" alt="Clothing">
+                <h3>Clothing</h3>
+                <a href="products.html?category=Clothing" class="btn">Explore</a>
+            </div>
+            <div class="category-card">
+                <img src="https://www.footandanklegroup.com/wp-content/uploads/2019/02/Shoe-shopping.jpg" alt="Footwear">
+                <h3>Footwear</h3>
+                <a href="products.html?category=Footwear" class="btn">Explore</a>
+            </div>
+            <div class="category-card">
+                <img src="https://i.pinimg.com/originals/fd/56/fe/fd56fe106a889d7842bd4e519a95d5c8.jpg" alt="Appliances">
+                <h3>Appliances</h3>
+                <a href="products.html?category=Appliances" class="btn">Explore</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

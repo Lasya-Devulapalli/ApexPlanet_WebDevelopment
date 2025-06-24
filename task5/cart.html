@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - TrendyShop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="light">
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">TrendyShop</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html?category=Electronics">Electronics</a></li>
+            <li><a href="products.html?category=Clothing">Clothing</a></li>
+            <li><a href="products.html?category=Footwear">Footwear</a></li>
+            <li><a href="products.html?category=Appliances">Appliances</a></li>
+            <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+        </ul>
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Search products...">
+        </div>
+        <button id="mode-toggle">Toggle Dark Mode</button>
+    </nav>
+
+    <!-- Cart -->
+    <section class="cart">
+        <h2>Your Cart</h2>
+        <div id="cart-items"></div>
+        <p id="cart-total">Total: $0.00</p>
+        <button class="btn" onclick="alert('Checkout functionality not implemented.')">Checkout</button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
